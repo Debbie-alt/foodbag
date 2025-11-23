@@ -1,22 +1,25 @@
-import { Text, View, Image } from 'react-native';
-import logo from '../assets/foodbag-logo.png';
+import { Text, View, Image , Button} from 'react-native';
+const logo = require('../assets/foodbag-logo.png');
+import { useNavigation } from '@react-navigation/native';
+import { useEffect } from 'react';
 
-export const EditScreenInfo = ({ path }: { path: string }) => {
-  const title = 'Open up the code for this screen:';
-  const description =
-    'Change any of the text, save the file, and your app will. Tchew automatically update.';
+ const EditScreenInfo = () => {
+  const navigation = useNavigation();
+useEffect(() => {
+  setTimeout(() => {
+  navigation.navigate('CheckMeals');
+  }, 4000);
+}, [navigation]);
 
   return (
     <View className={styles.
-    homeScreen}>
+    homeScreen} style={{ flex: 1  , backgroundColor: '#F50316', justifyContent: 'center', alignItems: 'center'  }}>
       <View className={styles.getStartedContainer}>
             <Image source={logo} style={{ width: 200, height: 250 }} />
         <View
           className={styles.codeHighlightContainer}
-          // darkModeStyle={styles.codeHighlightContainerDark}
         >
         </View>
-        {/* <Text className={styles.getStartedText}>{description}</Text> */}
       </View>
     </View>
   );
@@ -32,3 +35,4 @@ const styles = {
   helpLinkText: `text-center`,
   homeScreenFilename: ``,
 };
+export default EditScreenInfo;
