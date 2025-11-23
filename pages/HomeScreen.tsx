@@ -1,9 +1,9 @@
+import { View } from 'react-native'
 import React from 'react'
 
 const HomeScreen = () => {
   return (
-    <div>HomeScreen</div>
+    <View></View>
   )
 }
-
 export default HomeScreen

@@ -1,8 +1,9 @@
 import React from 'react'
+import { View } from 'react-native'
 
 const CheckMeals = () => {
   return (
-    <div>CheckMeals</div>
+    <View></View>
   )
 }
 
