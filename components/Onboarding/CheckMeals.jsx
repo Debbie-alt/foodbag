@@ -1,30 +1,45 @@
-import React from 'react'
-import { Button, View, SafeAreaViewBase, Text } from 'react-native'
+import { View, Text, TouchableOpacity, SafeAreaViewBase } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-
+import { useTailwind } from 'tailwind-rn';
 const CheckMeals = () => {
-  const navigation = useNavigation();
-  return (
-    <SafeAreaViewBase className='flex-1'>
-    <View className='bg-red-500 h-1/2 w-full'>
+const navigation = useNavigation();
+const tailwind = useTailwind(); 
 
+return (
+<SafeAreaViewBase style={tailwind('flex-1 bg-white')}>
+<View style={tailwind('bg-red-500 h-1/2 w-full justify-center items-center')}>
+<TouchableOpacity
+style={tailwind('bg-white px-6 py-3 rounded')}
+onPress={() => alert('Button Pressed!')}
+>
+<Text style={tailwind('text-red-500 font-bold')}>Press Me</Text> </TouchableOpacity> </View>
 
-      <Button title="" onPress={() => alert('Button Pressed!')} />
+  <View style={tailwind('h-1/2 w-full justify-center items-center px-6')}>
+    <Text style={tailwind('text-2xl font-medium mb-4 text-black')}>
+      Check for your meals
+    </Text>
+    <Text style={tailwind('text-center text-black mb-6')}>
+      Explore fresh and wholesome meals options made just for you. Healthy eating doesn’t 
+      have to be complicated - we keep it simple and satisfying.
+    </Text>
 
-    </View>
-    <View className='bg-white h-1/2 w-full justify-center items-center py-7 text-black '>
-        <Text className='text-2xl font-medium mb-4'>Check for your meals</Text>
-        <Text className='text-center w-2/3'>Explore fresh and wholesome meals options
-          made just for you . Healthy eating doesn’t 
-          have to be complicated - we keep it
-          simple and satisfying</Text>
-        <Button title="Next" onPress={() => navigation.navigate('Home' )} />
-        <Button title="Skip" onPress={() => navigation.navigate('Home' )} />
+    <TouchableOpacity
+      style={tailwind('bg-red-500 px-8 py-3 rounded mb-3')}
+      onPress={() => navigation.navigate('Home')}
+    >
+      <Text style={tailwind('text-white font-medium text-center')}>Next</Text>
+    </TouchableOpacity>
 
+    <TouchableOpacity
+      style={tailwind('border border-red-500 px-8 py-3 rounded')}
+      onPress={() => navigation.navigate('Home')}
+    >
+      <Text style={tailwind('text-red-500 font-medium text-center')}>Skip</Text>
+    </TouchableOpacity>
+  </View>
+</SafeAreaViewBase>
 
-    </View>
-    </SafeAreaViewBase>
-  )
-}
+);
+};
 
-export default CheckMeals
+export default CheckMeals;

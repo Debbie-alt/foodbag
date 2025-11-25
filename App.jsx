@@ -2,8 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import EditScreenInfo from './components/EditScreenInfo';
-import CheckMeals from './pages/CheckMeals';
-
+import CheckMeals from './components/Onboarding/CheckMeals';
 
 
 
