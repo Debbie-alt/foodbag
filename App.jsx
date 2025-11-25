@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-// import CheckMeals from 'pages/CheckMeals';
-import EditScreenInfo from 'components/Onboarding/EditScreenInfo';
+import EditScreenInfo from './components/EditScreenInfo';
+import CheckMeals from './pages/CheckMeals';
+
 
 
 
@@ -17,11 +18,11 @@ export default function App() {
           component={EditScreenInfo} 
           options={{ headerShown: false }}
         />
-         {/* <Stack.Screen 
+         <Stack.Screen 
           name="CheckMeals" 
           component={CheckMeals} 
           options={{ headerShown:false }}
-        /> */}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

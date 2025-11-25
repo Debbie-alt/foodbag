@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo start",
+  "start": "EXPO_OFFLINE=0 EXPO_NO_ANALYTICS=1 EXPO_NO_GTM=1 expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",

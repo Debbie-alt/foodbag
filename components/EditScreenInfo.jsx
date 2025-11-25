@@ -19,7 +19,6 @@ useEffect(() => {
         <View
           className={styles.codeHighlightContainer}
         >
-          <Button title='Go to CheckMeals' onPress={() => navigation.navigate('CheckMeals')}></Button>
         </View>
       </View>
     </View>

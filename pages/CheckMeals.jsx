@@ -9,7 +9,7 @@ const CheckMeals = () => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center',  backgroundColor: '#F50316' }}>
       <Text style={tailwind('text-white text-xl')} >CheckMeals Page</Text>
-      <Button title='Go Back' onPress={() => navigation.goBack()}></Button>
+      {/* <Button title='Go Back' onPress={() => navigation.goBack()}></Button> */}
     </View>
   )
 }
