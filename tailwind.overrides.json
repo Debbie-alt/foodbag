@@ -75,6 +75,11 @@
     "style": { "backgroundColor": "#FFFCF0"}
 
 },
+"bg-gray-400": {
+    "style": { "backgroundColor": "rgb(156 163 175)"
+}
+
+},
 "shadow-md": {
     "style": {
       "shadowColor": "#000",

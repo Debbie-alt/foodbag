@@ -11,11 +11,7 @@ import { useNavigation } from '@react-navigation/native';
 const CalorieIntake = () => {
     const tailwind = useTailwind(); 
     const navigation = useNavigation()
-      useEffect(() => {
-      setTimeout(() => {
-      navigation.navigate('EatWell');
-      },6000);
-    }, [navigation]);
+   
   return (
       <View style={tailwind('flex-1')}>
       
@@ -62,14 +58,14 @@ const CalorieIntake = () => {
       
                 <TouchableOpacity
                   style={tailwind('px-14 py-3 bg-[#FFFCF0] shadow-md rounded-full')}
-                  onPress={() => navigation.navigate('Home')}
+                  onPress={() => navigation.navigate('SignIn')}
                 >
                   <Text style={tailwind('text-red-500 text-lg font-medium text-center')}>Skip</Text>
                 </TouchableOpacity>
       
                 <TouchableOpacity
                   style={tailwind('bg-red-500 px-14 py-3 rounded-full mx-4')}
-                  onPress={() => navigation.navigate('Home')}
+                  onPress={() => navigation.navigate('EatWell')}
                 >
                   <Text style={tailwind('text-white text-lg font-medium text-center')}>Next</Text>
                 </TouchableOpacity>
