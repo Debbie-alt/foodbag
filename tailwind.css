@@ -66,6 +66,14 @@
   margin-top: 2rem
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem
+}
+
 .flex {
   display: flex
 }
@@ -112,6 +120,30 @@
 
 .w-80 {
   width: 20rem
+}
+
+.w-9 {
+  width: 2.25rem
+}
+
+.w-3\/4 {
+  width: 75%
+}
+
+.w-\[80\%\] {
+  width: 80%
+}
+
+.w-\[90\%\] {
+  width: 90%
+}
+
+/* .w-\[\%\] {
+  width: %
+} */
+
+.w-\[84\%\] {
+  width: 84%
 }
 
 .flex-1 {
@@ -333,6 +365,10 @@
   font-weight: 600
 }
 
+.font-light {
+  font-weight: 300
+}
+
 .leading-6 {
   line-height: 1.5rem
 }
@@ -350,4 +386,9 @@
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1))
 }
