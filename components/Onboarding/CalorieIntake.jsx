@@ -1,23 +1,36 @@
-import React from 'react'
 import { View , Text, Image, TouchableOpacity} from 'react-native'
 import { useTailwind } from 'tailwind-rn'
-const checkmeal1 = require('../../assets/checkmeal1.jpg')
+const calorie1 = require('../../assets/calorie1.jpg')
+const calorie2 = require('../../assets/calorie2.jpg')
+import { useEffect } from 'react'
+const calorie3 = require('../../assets/calorie3.jpg')
+
 import { useNavigation } from '@react-navigation/native';
 
 
 const CalorieIntake = () => {
     const tailwind = useTailwind(); 
     const navigation = useNavigation()
+      useEffect(() => {
+      setTimeout(() => {
+      navigation.navigate('EatWell');
+      },6000);
+    }, [navigation]);
   return (
       <View style={tailwind('flex-1')}>
       
             <View style={tailwind('bg-red-500 h-1/2 w-full rounded-bl-full justify-end py-10 items-center')}>
-              <View
-              style={tailwind('flex flex-row items-center mb-12')}>
-                <Image source={checkmeal1} style={ [ tailwind('mx-2 rounded-xl border-4 border-white'), { width: 140, height: 140 }  ]} />
-                <Image source={checkmeal1} style={ [ tailwind('mx-2 rounded-xl border-4 border-white'), { width: 140, height: 140 }  ]} />
-      
-              </View>
+               <View style = {tailwind('relative mt-4')}>
+                       <Image source={calorie3} style={ [ tailwind('mx-2 rounded-2xl border-4 border-white'), { width: 140, height: 140 }  ]} />
+             
+                        
+                      </View>
+                     <View
+                     style={tailwind('flex flex-row items-center bottom-10 z-20')}>
+                       <Image source={calorie1} style={ [ tailwind('mx-2 rounded-2xl border-4 border-white'), { width: 140, height: 140 }  ]} />
+                       <Image source={calorie2} style={ [ tailwind('mx-2 rounded-bl-2xl rounded-tl-2xl  rounded-tr-2xl border-4 border-white'), { width: 140, height: 140 }  ]} />
+             
+                     </View>
       
               <View style={tailwind('flex flex-row items-center')}>
                 <TouchableOpacity

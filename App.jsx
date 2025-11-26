@@ -7,6 +7,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import EditScreenInfo from './components/EditScreenInfo'
 import CheckMeals from './components/Onboarding/CheckMeals'
 import CalorieIntake from './components/Onboarding/CalorieIntake'
+import Eatwell from './components/Onboarding/EatWell'
+import SignIn from './components/Auth/SignIn'
 
 const utilities = {
   ...generated,
@@ -33,6 +35,16 @@ export default function App() {
            <Stack.Screen 
             name="CalorieIntake"
             component={CalorieIntake}
+            options={{ headerShown: false }}
+          />
+           <Stack.Screen 
+            name="EatWell"
+            component={Eatwell}
+            options={{ headerShown: false }}
+          />
+           <Stack.Screen 
+            name="SignIn"
+            component={SignIn}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>
