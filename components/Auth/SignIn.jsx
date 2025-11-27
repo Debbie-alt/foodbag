@@ -8,16 +8,33 @@ const SignIn = () => {
   return (
    <View style={tailwind('flex-1 w-screen bg-white justify-center items-center py-10')}>
     <Text style ={tailwind('text-3xl font-medium mb-2')}>Sign In</Text>
-    <Text  style ={tailwind('text-lg font-loght')}>Enter info to sign in into your account </Text>
-    <KeyboardAvoidingView style={tailwind('w-screen mt-8')}>
-     <View contentContainerStyle={tailwind('px-6 py-8')}>
-        <TextInput style={tailwind('w-80 bg-gray-300 py-5 px-4 rounded-xl')} placeholder='e.g johndoe@gmail.com'></TextInput>
-                <TextInput style={tailwind('w-80 bg-gray-300 py-5 px-4 rounded-xl')} placeholder='e.g johndoe@gmail.com'></TextInput>
+    <Text  style ={tailwind('text-lg font-light')}>Enter info to sign in into your account </Text>
+    <KeyboardAvoidingView style={tailwind('w-[84%] mt-8 ')}>
+     <View contentContainerStyle={tailwind('px-6 py-8 bg-red-500')}>
+        <Text style={tailwind('text-gray-700 mb-2 text-lg mx-2')}>Email</Text>
+
+        <TextInput style={tailwind(' bg-gray-300 py-5 px-4 mb-7 rounded-xl text-lg')} placeholder='e.g johndoe@gmail.com'></TextInput>
+        <Text style={tailwind('text-gray-700 mb-2 text-lg mx-2')}>Password</Text>
+
+                <TextInput textContentType='password' style={tailwind(' bg-gray-300 py-5 px-4 text-lg rounded-xl')} placeholder='************'></TextInput>
 
       {/* Form goes here */}
      </View>
-     <TouchableOpacity style ={tailwind('text-white bg-red-500')}>
-        <Text>Sign In</Text>
+     <TouchableOpacity style ={tailwind('text-white rounded-full bg-red-500 text-center items-center  py-4 mt-8')}>
+        <Text style = {tailwind('text-white text-lg')}>Sign In</Text>
+     </TouchableOpacity>
+  </KeyboardAvoidingView>
+
+  <Text style ={tailwind('text-3xl font-medium mb-2')}>Sign In</Text>
+    <Text  style ={tailwind('text-lg font-light')}>Enter info to sign in into your account </Text>
+    <KeyboardAvoidingView style={tailwind('w-[84%] mt-8 ')}>
+     <View contentContainerStyle={tailwind('px-6 py-8 bg-red-500')}>
+        <Text style={tailwind('text-gray-700 mb-2 text-lg mx-2')}>Email</Text>
+
+      
+     </View>
+     <TouchableOpacity style ={tailwind('text-white rounded-full bg-red-500 text-center items-center  py-4 mt-8')}>
+        <Text style = {tailwind('text-white text-lg')}>Sign In</Text>
      </TouchableOpacity>
   </KeyboardAvoidingView>
 
