@@ -8,14 +8,14 @@ import { useEffect } from 'react';
 useEffect(() => {
   setTimeout(() => {
   navigation.navigate('CheckMeals');
-  }, 4000);
+  }, 3000);
 }, [navigation]);
 
   return (
     <View className={styles.
     homeScreen} style={{ flex: 1  , backgroundColor: '#F50316', justifyContent: 'center', alignItems: 'center'  }}>
       <View className={styles.getStartedContainer}>
-            <Image source={logo} style={{ width: 200, height: 250 }} />
+            <Image source={logo} style={{ width: 150 , height: 180 }} />
         <View
           className={styles.codeHighlightContainer}
         >
