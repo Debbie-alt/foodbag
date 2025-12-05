@@ -13,12 +13,11 @@ const SignIn = () => {
      <View contentContainerStyle={tailwind('px-6 py-8 bg-red-500')}>
         <Text style={tailwind('text-gray-700 mb-2 text-lg mx-2')}>Email</Text>
 
-        <TextInput style={tailwind(' bg-gray-300 py-5 px-4 mb-7 rounded-xl text-lg')} placeholder='e.g johndoe@gmail.com'></TextInput>
+        <TextInput style={tailwind(' bg-stone-300 py-5 px-4 mb-7 rounded-xl text-lg')} placeholder='e.g johndoe@gmail.com'></TextInput>
         <Text style={tailwind('text-gray-700 mb-2 text-lg mx-2')}>Password</Text>
 
-                <TextInput textContentType='password' style={tailwind(' bg-gray-300 py-5 px-4 text-lg rounded-xl')} placeholder='************'></TextInput>
+                <TextInput textContentType='password' style={tailwind(' bg-stone-300 py-5 px-4 text-lg rounded-xl')} placeholder='************'></TextInput>
 
-      {/* Form goes here */}
      </View>
      <TouchableOpacity style ={tailwind('text-white rounded-full bg-red-500 text-center items-center  py-4 mt-8')}>
         <Text style = {tailwind('text-white text-lg')}>Sign In</Text>
@@ -32,6 +31,9 @@ const SignIn = () => {
 </View>
 
 {/* Social buttons */}
+<View style>
+   <Text>Lts see it works?</Text>
+</View>
 
   
 
