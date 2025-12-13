@@ -47,6 +47,11 @@ export default function App() {
             component={SignIn}
             options={{ headerShown: false }}
           />
+              <Stack.Screen 
+            name="SignUp"
+            component={SignUp}
+            options={{ headerShown: false }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </TailwindProvider>
