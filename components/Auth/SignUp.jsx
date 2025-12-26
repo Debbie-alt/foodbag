@@ -7,7 +7,7 @@ const apple = require('../../assets/apple.png')
 const facebook = require('../../assets/facebook.png')
 
 
-const SignIn = () => {
+const SignUp = () => {
     const tailwind = useTailwind();
   return (
    <View style={tailwind('flex-1 w-screen bg-white justify-center items-center py-10')}>
@@ -56,4 +56,4 @@ const SignIn = () => {
   )
 }
 
-export default SignIn
+export default SignUp

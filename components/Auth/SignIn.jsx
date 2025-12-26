@@ -54,7 +54,7 @@ const SignIn = () => {
    <Text style={tailwind('text-lg ')}>Don't have an account ? 
       <TouchableOpacity>
          <Text style={tailwind('text-purple-500 mx-2 underline')}                   
-         onPress={() => navigation.navigate('Home')}
+         onPress={() => navigation.navigate('SignUp')}
 >Sign up</Text>
       </TouchableOpacity>
    </Text>

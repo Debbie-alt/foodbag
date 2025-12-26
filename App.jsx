@@ -9,6 +9,7 @@ import CheckMeals from './components/Onboarding/CheckMeals'
 import CalorieIntake from './components/Onboarding/CalorieIntake'
 import Eatwell from './components/Onboarding/EatWell'
 import SignIn from './components/Auth/SignIn'
+import SignUp from './components/Auth/SignUp'
 
 const utilities = {
   ...generated,
