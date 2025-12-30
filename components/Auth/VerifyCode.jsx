@@ -29,7 +29,6 @@ const VerifyCode = () => {
         Please enter the 6 digits code we sent to your email ****doe@gmail.com
       </Text>
 
-      {/* 6-Digit Input Container */}
       <View style={tailwind('flex-row justify-between w-full my-6')}>
         {code.map((digit, index) => (
           <TextInput
